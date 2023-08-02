@@ -1,0 +1,93 @@
+<div class="analytic">
+
+    <div class="analytic-section">
+    <div class="analytic-header">
+     Analytics
+
+    </div>
+    <div class="border-bottom">
+
+    </div>
+    <div class="anlytic-body">
+        <div class="row d-flex justify-content-between"> 
+        <label class="titel-cal mt-4 mb-2 col-lg-6">Calculation</label>
+        <label class="titel-cal mt-4 col-lg-6">Average Charts</label>
+    </div>
+        <div class="row">
+         
+            <div class="col-lg-6" class="d-flex">
+                <div class="m-1" *ngFor="let item of calculation" [ngClass]="item.title">
+                    <div class="d-flex flex-column text-center">
+                       <span class="title-card"> {{item.title}}</span>
+                     <span class="text-center">  <img [src]="item.img"  width="30" height="30"> </span>
+                    <span class="price-card">  {{item.price}}</span>
+                    </div>
+                  
+                </div>
+        </div>
+        <div class="vertical-line">
+
+        </div>
+        <div class="col-lg-4 ">
+           
+         <canvas id="bar"></canvas>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="market-update">
+    <div class="market-section">
+        <div class="analytic-header row">
+            <div class="col-lg-6">
+           <span class="market-title"> Market Update</span>
+        </div>
+        <div class="col-lg-6">
+           <input class="nosubmit" type="search" placeholder="Search...">
+        </div>
+        </div>
+        <div class="anlytic-body">
+            <div class="row">
+               <div class="col">
+                No
+               </div>
+               <div class="col">
+                Name
+               </div>
+               <div class="col">
+                LastPrice
+               </div>
+               <div class="col">
+                Change
+               </div>
+               <div class="col">
+                Market States
+               </div>
+               <div class="col">
+                Actions
+               </div>
+            </div>
+            <div class="row" *ngFor="let item of marketUpdate">
+                <div class="col">
+                    {{item.No}}
+                   </div>
+                   <div class="col">
+                    {{item.name}}
+                   </div>
+                   <div class="col">
+                    {{item.lastPrice}}
+                   </div>
+                   <div class="col">
+                    {{item.change}}
+                   </div>
+                   <div class="col">
+                    <img [src]="item.MarketStatus"  width="30" height="30"> 
+                   </div>
+                   <div class="col">
+                    <button class="info-btn">Info</button>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>

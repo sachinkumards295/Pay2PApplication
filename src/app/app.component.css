@@ -1,0 +1,81 @@
+
+.container-page{
+    background-color:#f7f7f7;
+}
+
+.side-navbar{
+    background-color: black !important;
+    margin: 20px 20px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.image-color{
+    background-color: white;
+}
+
+.home-title{
+    color: white;
+}
+
+.nav-info{
+    margin: 40px 30px;
+}
+
+.active{
+    background-color: red;
+    border-radius: 5px 5px 5px 5px;
+    color: #f7f7f7;
+    padding: 9px 5px;
+}
+
+.history-card{
+    background-color: #fff !important;
+    margin: 10px 10px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.price{
+    font-size: 20px;
+    color: black;
+}
+
+.payment-title{
+    color: black;
+}
+
+.history-card{
+    margin: 20px 20px;
+}
+
+.view-title{
+    color: red;
+}
+
+.see-title{
+    color:black
+}
+.transaction-detail{
+    justify-content: space-between;
+}
+.head-title{
+    color: black;
+    font-weight:500;
+    font-size: 20px;
+}
+
+.sub-head-title{
+    color:#A9A9A9	;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+ }
+
+ .log-out{
+    margin-top: 90%;
+ }
